@@ -1,4 +1,4 @@
 # piticopet
  Site Pitico Pet
 
-<a href="index.html.html"> Clique para abrir o site Pitico Pet </a>
+<a href="https://renatohalcantara.github.io/piticopet/index.html.html"> Clique para abrir o site Pitico Pet </a>
