@@ -95,8 +95,8 @@ nav > a:active {
     </header>
     <nav>
         <a href="Index (Página Inicial).html"> Home </a>    
-        <a href="#"> Contato </a>
-        <a href="#"> Quem Somos </a>
+        <a href="index.html.html"> Contato </a>
+        <a href="index.html.html"> Quem Somos </a>
     </nav>
 
 </body>
