@@ -61,6 +61,7 @@ nav > a {
     font-family: "Righteous", sans-serif;
     font-weight: 400;
     font-size: 20px;
+    cursor: pointer;
 }
 
 nav > a:hover {
@@ -79,18 +80,7 @@ nav > a:active {
 main {
     padding: 20px;
     background-color: white;
-    /*border-top-left-radius: 20px;
-    border-top-right-radius: 20px;*/
 }
-
-/*footer {
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-    margin: auto;
-    padding: 20px;
-}*/
 
 #img {
     text-align: center;
