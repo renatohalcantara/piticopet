@@ -5,127 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="shortcut icon" href="Imagens/Favicon.png" type="image/x-icon">
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
-    :root {
-        --cor1: #8ee5f5;
-        --cor2: #ff6a00;
-        --fonte_padrao: Arial, Helvetica, sans-serif;
-    }
-
-    * {
-        margin: 0%;
-        padding: 0%;
-        border: 0%;
-    }
-
-    body {
-        background-color: var(--cor1);
-        font-family: var(--fonte_padrao);
-        text-align: justify;
-    }
-
-    header {
-        width: 100%;
-        background-color: var(--cor2);
-        color: white;
-        text-align: center;
-        padding-top: 15px;
-        padding-bottom: 10px;
-    }
-
-    header > h1{
-        font-family: "Righteous", sans-serif;
-        font-weight: 400;
-        font-size: 3em;
-    }
-
-    header > h2{
-        padding: 5px;
-        font-family: "Righteous", sans-serif;
-        font-weight: 400;
-        /*line-height: 300%;*/
-    }
-
-    nav {
-        background-color: var(--cor1);
-        padding-right: 10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        position: sticky;
-        top: 0;
-        left: 0; 
-        box-shadow: 0px 1px 4px 0px #000000a4;
-        text-align: center;
-    }
-
-    nav > a {
-        color: white;
-        padding: 10px;
-        text-decoration: none;
-        font-family: "Righteous", sans-serif;
-        font-weight: 400;
-        font-size: 20px;
-    }
-
-    nav > a:hover {
-        background-color: var(--cor2);
-        text-decoration: none;
-    }
-
-    nav > a:visited {
-        background-color: var(--cor2);
-    }
-
-    nav > a:active {
-        background-color: var(--cor2);
-    }
-
-    #h2{
-    color: var(--cor2);
-    font-family: "Righteous", sans-serif;
-    font-weight: 400;
-    font-size: 2em;
-    text-align: center;
-    padding-top: 50px; 
-    }
-
-    @media only screen and (max-width: 800px){
-        
-    header > h2{
-        display: none;
-    }
-
-    header > h1{
-        font-size: 40px;
-        text-align: left;
-        padding-left: 10px;
-        }
-    }
-
-
-    </style>
-
+    <link rel="stylesheet" href="Home.css">
+    <script src="script.js" defer ></script>
 </head>
 
 <body>
     <header>
-        <h1>Pitico Pet</h1>
 
-        <h2>
-            Tudo aquilo que você sempre quis para o seu pet, em um único lugar!
-        </h2>
+        <div class="logo">
+            <a href="#"><h1>Pitico Pet</h1></a>
+        </div>
+
+        <nav class="menu-desktop">
+            <ul>
+                <li><a href="#"> Home </a></li>
+                <li><a href="https://renatohalcantara.github.io/piticopet/Contato.html"> Contato </a></li>
+                <li><a href="https://renatohalcantara.github.io/piticopet/"> Quem Somos </a></li>
+            </ul>
+        </nav>
+
+        <div class="btn-abrir-menu" id="btn-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
+        </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+
+            <div class="btn-fechar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                  </svg>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#"> Home </a></li>
+                    <li><a href="https://renatohalcantara.github.io/piticopet/Contato.html"> Contato </a></li>
+                    <li><a href="https://renatohalcantara.github.io/piticopet/"> Quem Somos </a></li>
+                </ul>
+            </nav>
+
+        </div><!-- Menu Mobile -->
+
+        <div class="overlay-menu" id="overlay-menu"></div>
+
     </header>
 
-    <nav>
-        <a href="#"> Home </a>    
-        <a href="https://renatohalcantara.github.io/piticopet/Contato.html"> Contato </a>
-        <a href="https://renatohalcantara.github.io/piticopet/"> Quem Somos </a>
-    </nav>
+    <main>
+        <div class="banner">
+            <h1>Tudo que seu pet precisa,</h1>
+            <h1 id="texto-banner-1">você encontra aqui !</h1>
+        </div>
 
-    <h2 id="h2">Página em construção</h2>
+        <section id="produtos">
+
+            <div id="rações">
+                <p class="produtos">RAÇÕES</p>
+                <img src="Imagens/rações.png" alt="rações" id="img-rações">
+                <p class="preços">R$ 50,00</p>
+            </div>
+
+            <div id="comedouros">
+                <p class="produtos">COMEDOUROS</p>
+                <!--mg src="Imagens/comedouros.jpg" alt="" id="img-comedouros">-->
+                <p class="preços">R$ 50,00</p>
+            </div>
+
+            <div id="roupas">
+                <p class="produtos">ROUPAS</p>
+                <p class="preços">R$ 50,00</p>
+            </div>
+
+            <div id="coleiras">
+                <p class="produtos">COLEIRAS</p>
+                <!--<img src="Imagens/coleira.png" alt="" id="img-coleiras">-->
+                <p class="preços">R$ 50,00</p>
+            </div>
+
+            <div id="casas">
+                <p class="produtos">CASAS</p>
+                <p class="preços">R$ 50,00</p>
+            </div>
+
+            <div id="brinquedos">
+                <p class="produtos">BRINQUEDOS</p>
+                <p class="preços">R$ 50,00</p>
+            </div>
+
+        </section>
+
+    </main>
+
 </body>
 
 </html>
