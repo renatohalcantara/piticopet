@@ -150,160 +150,23 @@ header nav.menu-desktop ul li{
 
 /*----------------------------------------*/
 
-#section{
-    background-color: #f8f8f8;
-    width: 100%;
-    height: 700px;
-    color: var(--cor2);
+#flex{
+    display: flex;
 }
 
-#h1-section{
-    font-size: 45px;
-    font-weight: lighter;
-    padding-top: 40px;
-    font-family: "Righteous", sans-serif;
-    color: var(--cor1);
-    text-align: center;
-    letter-spacing: 3px;
-}
-
-.produtos{
-    font-family: "Righteous", sans-serif;
-    text-align: center;
-    padding: 12px;
-    font-weight: 300;
+#flex div{
+    flex: ;
 }
 
 .img-produtos{
-    width: 130px;
-    height: 130px;
-    margin-left: 65px;
+    max-width: 100%;
+    display: block;
 }
 
-/*RAÇÕES*/
+/*#h1-section{
+    display: block;
+}*/
 
-#rações{
-    float: left;
-    background-color: white;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 332px;
-    width: 250px;
-    height: 190px;
-    border-top-style: solid;
-    box-shadow: 5px 5px 15px #d0d0d0;
-    border-color: var(--cor1);
-    border-radius: 7px;
-    transition: 0.5s all;
-}
-
-#rações:hover{
-    transform: scale(1.1);
-}
-
-/*COMEDOUROS*/
-
-#comedouros{
-    float: left;
-    background-color: white;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    width: 250px;
-    height: 190px;
-    border-top-style: solid;
-    box-shadow: 5px 5px 15px #d0d0d0;
-    border-color: var(--cor1);
-    border-radius: 7px;
-    transition: 0.5s all;
-}
-
-#comedouros:hover{
-    transform: scale(1.1);
-}
-
-/*CAMAS*/
-
-#camas{
-    float: left;
-    background-color: white;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    margin-right: 200px;
-    width: 250px;
-    height: 190px;
-    border-top-style: solid;
-    box-shadow: 5px 5px 15px #d0d0d0;
-    border-color: var(--cor1);
-    border-radius: 7px;
-    transition: 0.5s all;
-}
-
-#roupas:hover{
-    transform: scale(1.1);
-}
-
-#coleiras{
-    float: left;
-    background-color: white;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 333px;
-    width: 250px;
-    height: 190px;
-    border-top-style: solid;
-    box-shadow: 5px 5px 15px #d0d0d0;
-    border-color: var(--cor1);
-    border-radius: 7px;
-    transition: 0.5s all;
-}
-
-#coleiras:hover{
-    transform: scale(1.1);
-}
-
-#casas{
-    float: left;
-    background-color: white;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    width: 250px;
-    height: 190px;
-    border-top-style: solid;
-    box-shadow: 5px 5px 15px #d0d0d0;
-    border-color: var(--cor1);
-    border-radius: 7px;
-    transition: 0.5s all;
-}
-
-#casas:hover{
-    transform: scale(1.1);
-}
-
-#brinquedos{
-    float: left;
-    background-color: white;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    width: 250px;
-    height: 190px;
-    border-top-style: solid;
-    box-shadow: 5px 5px 15px #d0d0d0;
-    border-color: var(--cor1);
-    border-radius: 7px;
-    transition: 0.5s all;
-}
-
-#brinquedos:hover{
-    transform: scale(1.1);
-}
-
-span{
-    color: var(--cor2);
-}
 
 @keyframes flutuar{
     0%{
@@ -318,27 +181,54 @@ span{
 footer{
     background-color: var(--cor2);
     width: 100%;
-    height: 250px;
-    display: flex;
-}
-
-footer div{ 
-    margin: 15px 25px;
-    float: left;
-    border-left-style: solid var(--cor1);
-    align-items: center;
+    height: 300px;
 }
 
 footer h3{
-    padding: 20px;
-    display: inline-block;
+    color: white;
+    font-family: "Righteous", sans-serif;
+    height: 58px;
+    width: 500px;
+    padding-left: 5px;
+    margin: 4px 50px 0px 100px;
+    padding-top: 30px;
+    text-align: left;
+    border-left-style: solid;
+    border-color: var(--cor1);
 }
 
-div{
-    margin: auto;
+#id1{
+    color: white;
+    font-family: "Righteous", sans-serif;
+    float: left;
+    width: 300px;
+    padding-left: 5px;
+    margin: 0px 50px 4px 100px;
+    border-left-style: solid;
+    border-color: var(--cor1);
 }
 
+#id2{
+    color: white;
+    font-family: "Righteous", sans-serif;
+    float: left;
+    width: 300px;
+    padding-left: 5px;
+    margin: 0px 50px 4px 20px;
+    border-left-style: solid;
+    border-color: var(--cor1);
+}
 
+#id3{
+    color: white;
+    font-family: "Righteous", sans-serif;
+    float: left;
+    width: 500px;
+    padding-left: 5px;
+    margin: 0px 50px 4px 20px;
+    border-left-style: solid;
+    border-color: var(--cor1);
+}
 
 @media only screen and (max-width: 800px){
     .menu-desktop{
