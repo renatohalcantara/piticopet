@@ -31,12 +31,13 @@ header{
 }
 
 header h1{
-    margin-right: 850px;
+    margin-right: 810px;
     font-weight: 300;
     text-shadow: 5px 4px 10px #00000091;
 }
 
 header a{
+    font-size: 17px;
     color: white;
     text-decoration: none;
     display: inline-block;
@@ -122,6 +123,7 @@ header nav.menu-desktop ul li{
     background: url("Imagens/Banner.avif") no-repeat center center;
     background-size: cover;
     height: 500px;
+    width: 100%;
 }
 
 .banner h1{
@@ -132,6 +134,7 @@ header nav.menu-desktop ul li{
     padding-top: 130px;
     font-weight: 300;
     font-size: 55px;
+    letter-spacing: 3px;
 }
 
 #texto-banner-1{
@@ -147,6 +150,22 @@ header nav.menu-desktop ul li{
 
 /*----------------------------------------*/
 
+#section{
+    background-color: #f8f8f8;
+    width: 100%;
+    height: 600px;
+    color: var(--cor2);
+}
+
+#h1-section{
+    font-size: 45px;
+    font-weight: lighter;
+    padding-top: 40px;
+    font-family: "Righteous", sans-serif;
+    color: var(--cor1);
+    text-align: center;
+    letter-spacing: 3px;
+}
 
 .produtos{
     font-family: "Righteous", sans-serif;
@@ -155,12 +174,10 @@ header nav.menu-desktop ul li{
     font-weight: 300;
 }
 
-.preços{
-    font-family: var(--fonte_padrao);
-    text-align: center;
-    padding: 12px;
-    margin-top: 85px;
-    font-weight: normal;
+.img-produtos{
+    width: 130px;
+    height: 130px;
+    margin-left: 65px;
 }
 
 /*RAÇÕES*/
@@ -174,19 +191,14 @@ header nav.menu-desktop ul li{
     width: 250px;
     height: 190px;
     border-top-style: solid;
-    border-bottom-style: solid;
-    border-color: var(--cor2);
+    box-shadow: 5px 5px 15px #d0d0d0;
+    border-color: var(--cor1);
     border-radius: 7px;
     transition: 0.5s all;
 }
 
 #rações:hover{
     transform: scale(1.1);
-}
-
-#img-rações{
-    width: 200px;
-    height: 100px;
 }
 
 /*COMEDOUROS*/
@@ -200,8 +212,8 @@ header nav.menu-desktop ul li{
     width: 250px;
     height: 190px;
     border-top-style: solid;
-    border-bottom-style: solid;
-    border-color: var(--cor2);
+    box-shadow: 5px 5px 15px #d0d0d0;
+    border-color: var(--cor1);
     border-radius: 7px;
     transition: 0.5s all;
 }
@@ -210,7 +222,9 @@ header nav.menu-desktop ul li{
     transform: scale(1.1);
 }
 
-#roupas{
+/*CAMAS*/
+
+#camas{
     float: left;
     background-color: white;
     margin-top: 50px;
@@ -220,8 +234,8 @@ header nav.menu-desktop ul li{
     width: 250px;
     height: 190px;
     border-top-style: solid;
-    border-bottom-style: solid;
-    border-color: var(--cor2);
+    box-shadow: 5px 5px 15px #d0d0d0;
+    border-color: var(--cor1);
     border-radius: 7px;
     transition: 0.5s all;
 }
@@ -239,8 +253,8 @@ header nav.menu-desktop ul li{
     width: 250px;
     height: 190px;
     border-top-style: solid;
-    border-bottom-style: solid;
-    border-color: var(--cor2);
+    box-shadow: 5px 5px 15px #d0d0d0;
+    border-color: var(--cor1);
     border-radius: 7px;
     transition: 0.5s all;
 }
@@ -258,8 +272,8 @@ header nav.menu-desktop ul li{
     width: 250px;
     height: 190px;
     border-top-style: solid;
-    border-bottom-style: solid;
-    border-color: var(--cor2);
+    box-shadow: 5px 5px 15px #d0d0d0;
+    border-color: var(--cor1);
     border-radius: 7px;
     transition: 0.5s all;
 }
@@ -277,8 +291,8 @@ header nav.menu-desktop ul li{
     width: 250px;
     height: 190px;
     border-top-style: solid;
-    border-bottom-style: solid;
-    border-color: var(--cor2);
+    box-shadow: 5px 5px 15px #d0d0d0;
+    border-color: var(--cor1);
     border-radius: 7px;
     transition: 0.5s all;
 }
@@ -297,12 +311,6 @@ header nav.menu-desktop ul li{
     }
 }
 
-.seção1{
-    width: 100%;
-    height: 400px;
-    background-color: var(--cor2);
-}
-
 @media only screen and (max-width: 800px){
     .menu-desktop{
         display: none;
@@ -312,4 +320,6 @@ header nav.menu-desktop ul li{
         display: inline;
         color: white;
     }
+
+
 }

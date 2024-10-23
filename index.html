@@ -6,22 +6,51 @@
     <title> Quem Somos? </title>
     <link rel="stylesheet" href="Quem-Somos.css">
     <link rel="shortcut icon" href="Imagens/Favicon.png" type="image/x-icon">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <header>
-        <h1>Pitico Pet</h1>
 
-        <h2>
-            Tudo aquilo que você sempre quis para o seu pet, em um único lugar!
-        </h2>
+        <div class="logo">
+            <a href="#"><h1>Pitico Pet</h1></a>
+        </div>
+
+        <nav class="menu-desktop">
+            <ul>
+                <li><a href="#"> Home </a></li>
+                <li><a href="https://renatohalcantara.github.io/piticopet/Contato.html"> Contato </a></li>
+                <li><a href="https://renatohalcantara.github.io/piticopet/"> Quem Somos </a></li>
+            </ul>
+        </nav>
+
+        <div class="btn-abrir-menu" id="btn-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
+        </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+
+            <div class="btn-fechar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                  </svg>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#"> Home </a></li>
+                    <li><a href="https://renatohalcantara.github.io/piticopet/Contato.html"> Contato </a></li>
+                    <li><a href="https://renatohalcantara.github.io/piticopet/"> Quem Somos </a></li>
+                </ul>
+            </nav>
+
+        </div><!-- Menu Mobile -->
+
+        <div class="overlay-menu" id="overlay-menu"></div>
+
     </header>
-
-    <nav>
-        <a href="https://renatohalcantara.github.io/piticopet/Home.html"> Home </a>    
-        <a href="https://renatohalcantara.github.io/piticopet/Contato.html"> Contato </a>
-        <a href="#"> Quem Somos </a>
-    </nav>
 
     <main>
 

@@ -20,7 +20,104 @@ body {
     text-align: justify;
 }
 
-header {
+header{
+    padding: 10px 4%;
+    background-color: var(--cor2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Righteous", sans-serif;
+    letter-spacing: 3px;
+}
+
+header h1{
+    margin-right: 810px;
+    font-weight: 300;
+    text-shadow: 5px 4px 10px #00000091;
+}
+
+header a{
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header nav.menu-desktop a:hover{
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+/*--------------------------------------*/
+
+.menu-mobile{
+    background-color: var(--cor2);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    transition: .3s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: white;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: var(--cor1);  
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 10%;
+}
+
+.menu-mobile .btn-fechar svg{
+    color: white;
+}
+
+.btn-abrir-menu svg{
+    display: none;
+}
+
+.overlay-menu{
+    background-color: #00000071;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+/*header {
     width: 100%;
     background-color: var(--cor2);
     color: white;
@@ -39,7 +136,6 @@ header > h2{
     padding: 5px;
     font-family: "Righteous", sans-serif;
     font-weight: 400;
-    /*line-height: 300%;*/
 }
 
 nav {
@@ -75,7 +171,7 @@ nav > a:visited {
 
 nav > a:active {
     background-color: var(--cor2);
-}
+}*/
 
 main {
     padding: 20px;
