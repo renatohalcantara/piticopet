@@ -5,7 +5,7 @@
 :root {
     --cor1: #0597F2;
     --cor2: #ea4200;
-    --cor3: #830000;
+    --cor3: #04ff00;
     --fonte_padrao: Arial, Helvetica, sans-serif;
 }
 
@@ -263,6 +263,15 @@ footer .container li{
 #ul3{
     margin-top: 20px;
     margin-left: 40px;
+}
+
+#whaths{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    color: var(--cor3);
+    z-index: 9999;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 800px){
