@@ -26,12 +26,14 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: nowrap;
     font-family: "Righteous", sans-serif;
     letter-spacing: 3px;
+    width: 100%;
 }
 
-header h1{
-    margin-right: 810px;
+header a h1{
+    padding-right: 810px;
     font-weight: 300;
     text-shadow: 5px 4px 10px #00000091;
 }
@@ -66,7 +68,8 @@ header nav.menu-desktop ul li{
     top: 0;
     right: 0;
     z-index: 99999;
-    width: 0%;
+    width: 70%;
+    display: none;
     transition: .3s;
 }
 
@@ -117,72 +120,20 @@ header nav.menu-desktop ul li{
     display: none;
 }
 
-/*header {
-    width: 100%;
-    background-color: var(--cor2);
-    color: white;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 10px;
-}
-
-header > h1{
-    font-family: "Righteous", sans-serif;
-    font-weight: 400;
-    font-size: 3em;
-}
-
-header > h2{
-    padding: 5px;
-    font-family: "Righteous", sans-serif;
-    font-weight: 400;
-}
-
-nav {
-    background-color: var(--cor1);
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    position: sticky;
-    top: 0;
-    left: 0; 
-    box-shadow: 0px 1px 4px 0px #000000a4;
-    text-align: center;
-}
-
-nav > a {
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    font-family: "Righteous", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-nav > a:hover {
-    background-color: var(--cor2);
-    text-decoration: none;
-}
-
-nav > a:visited {
-    background-color: var(--cor2);
-}
-
-nav > a:active {
-    background-color: var(--cor2);
-}*/
-
-main {
+main{
     padding: 20px;
     background-color: white;
 }
 
-#img {
+main p{
+    font-size: 22px;
+}
+
+#img{
     text-align: center;
 }
 
-.img1 {
+.img1{
     text-align: center;
 }
 
@@ -195,33 +146,37 @@ figcaption{
     color: var(--cor2);
     font-family: "Righteous", sans-serif;
     font-weight: 400;
-    font-size: 25px;
-}
-
-#h2{
-    color: var(--cor2);
-    font-family: "Righteous", sans-serif;
-    font-weight: 400;
-    font-size: 25px;
-    text-align: left;
+    font-size: 29px;
+    padding: 0px 60px 0px 60px;
 }
 
 #diferenciais{
     color: var(--cor2);
     font-family: "Righteous", sans-serif;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 28px;
+    padding: 0px 60px 0px 60px;
 }
 
-a{
+main a{
     color: var(--cor2);
     font-family: "Righteous", sans-serif;
     font-weight: 400;
     text-decoration: none;
 }
 
-a:hover{
+main a:hover{
     text-decoration: underline;
+}
+
+main p{
+    padding: 0px 60px 0px 60px;
+}
+
+.listaDiferenciais{
+    padding: 0px 60px 0px 60px;
+    list-style: none;
+    font-size: 22px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -233,14 +188,14 @@ a:hover{
         width: 100%;
     }
 
-    header > h2{
-        display: none;
-    }
-
     header > h1{
         font-size: 40px;
         text-align: left;
         padding-left: 10px;
+    }
+
+    .menu-desktop{
+        display: none;
     }
 }
 
