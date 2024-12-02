@@ -31,7 +31,6 @@ header{
 }
 
 header h1{
-    margin-right: 810px;
     font-weight: 300;
     text-shadow: 5px 4px 10px #00000091;
 }
@@ -80,6 +79,7 @@ header nav.menu-desktop ul li{
 
 .menu-mobile nav ul{
     text-align: right;
+    padding-left: 0%;
 }
 
 .menu-mobile nav ul li a{
@@ -91,7 +91,8 @@ header nav.menu-desktop ul li{
 }
 
 .menu-mobile nav ul li a:hover{
-    background-color: var(--cor1);  
+    background-color: var(--cor1);
+    width: 100%;
 }
 
 .menu-mobile .btn-fechar{
@@ -136,6 +137,8 @@ header nav.menu-desktop ul li{
     font-weight: 300;
     font-size: 55px;
     letter-spacing: 3px;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
 }
 
 #texto-banner-1{
@@ -144,10 +147,10 @@ header nav.menu-desktop ul li{
 
 /* ANIMANDO O H1 */
 
-.banner h1{
+/* .banner h1{
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
-}
+} */
 
 /*----------------------------------------*/
 
@@ -156,7 +159,7 @@ header nav.menu-desktop ul li{
     flex-wrap: wrap;
     max-width: 1000px;
     margin: 0 auto;
-    height: 600px;
+    height: 100%;
     color: var(--cor2);
     font-family: "Righteous", sans-serif;
 }
@@ -220,52 +223,37 @@ span{
 footer{
     background-color: var(--cor2);
     width: 100%;
-    height: 250px;
+    height: 100%;
     font-family: "Righteous", sans-serif;
 }
 
 footer .container{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     color: white;
+    padding: 25px 0 25px 0;
 }
 
-footer .container ul{
-    width: 25%;
-    list-style: none;
+.container h3{
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
 }
 
-footer .container h3{
-    margin-bottom: 16px;
-    font-weight: 100;
+#area1{
+    line-height: normal;
 }
 
-footer .container .redes-sociais svg{
-    margin-right: 10px;
+#area2{
+    line-height: 30px;
 }
 
-footer .container ul > p{
-    margin-bottom: 40px;
+#area3{
+    line-height: 30px;
 }
 
-footer .container li{
-    margin: 10px 0;
-}
-
-#ul1{
-    margin: 20px 20px 0px 40px;
-}
-
-#ul2{
-    margin-top: 20px;
-}
-
-#ul3{
-    margin-top: 20px;
-    margin-left: 40px;
-}
-
-#whaths{
+#whaths svg{
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -284,5 +272,42 @@ footer .container li{
         color: white;
     }
 
+    .banner h1{
+        font-size: 30px;
+    }
+
+    #h1-section{
+        font-size: 30px;
+    }
+
+    footer .container{
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+
+    .container h3{
+        text-align: center;
+    }
+
+    #area1{
+        width: 100%;
+    }
+
+    #area2{
+        width: 100%;
+    }
+
+    #area3{
+        width: 100%;
+    }
+
+    #area3 h3{
+        margin: 20px 0px;
+    }
+
+    .container .redes-sociais{
+        text-align: center;
+        margin: 20px 0px;
+    }
 
 }
