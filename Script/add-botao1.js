@@ -1,12 +1,18 @@
+var contador = document.getElementById("atualizar-Carrinho")
+var num = contador.textContent
+
 function capturaProduto1()
 {
     var loja = document.getElementById("loja")
     var produto1 = document.getElementById("produto1")
     var produto1real = (produto1.textContent)
+
     var preço1 = document.getElementById("preço1")
     var preço1real = (preço1.textContent)
-
+    
     gerarTabela(produto1real, preço1real)
+    num++
+    contador.textContent = num
 }
 
 function gerarTabela(produto1real, preço1real)

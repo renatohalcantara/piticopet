@@ -155,6 +155,10 @@ section h1{
     background-color: white;
 }
 
+.produtos:hover{
+    transform: scale(1.05);
+}
+
 .flex2{
     display: flex;
     justify-content: flex-start;
