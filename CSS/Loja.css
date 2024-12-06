@@ -143,9 +143,6 @@ section h1{
 }
 
 .produtos{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
     width: 320px;
     height: 340px;
     margin: 30px;
@@ -159,10 +156,15 @@ section h1{
     transform: scale(1.05);
 }
 
-.flex2{
+.produtos p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 5px 15px;
+}
+
+.centralizar{
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
 }
 
 .flex .produtos button{
@@ -171,11 +173,10 @@ section h1{
     background-color: var(--cor2);
     font-family: "Righteous", sans-serif;
     border: none;
-    border-radius: 10px
+    border-radius: 5px
 }
 
 .flex .produtos .und{
-    display: block;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     font-weight: lighter;
@@ -191,11 +192,53 @@ section h1{
 }
 
 /*=============================================*/
+/* CARRINHO */
+
+#carrinho{
+    margin: 40px 0;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 130%;
+}
+
+#carrinho-2 h2{
+    padding: 20px 0px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+#p-carrinho{
+    display: inline;
+}
+
+#atualizar-Carrinho{
+    margin-left: 5px;
+    display: inline;
+}
+
 .fadeOut{
     opacity: 0;
     transition: 1s;
-    background-color: red;
 }
+
+tbody td{
+    padding: 0px 60px 8px 0;
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+/*---------------------------------------------*/
+
+#QRCode img{
+    width: 100%;
+    height: 100%;
+}
+
 /*=============================================*/
 footer{
     background-color: var(--cor2);
