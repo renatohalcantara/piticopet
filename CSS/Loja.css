@@ -191,6 +191,12 @@ section h1{
 }
 
 /*=============================================*/
+.fadeOut{
+    opacity: 0;
+    transition: 1s;
+    background-color: red;
+}
+/*=============================================*/
 footer{
     background-color: var(--cor2);
     width: 100%;
