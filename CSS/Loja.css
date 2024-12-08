@@ -129,38 +129,12 @@ section h1{
     letter-spacing: 3px;
     padding: 20px 0px;
 }
-
-section h1#rações{
-    transition: 2s;
-}
-
-section h1#comedouros{
-    transition: 2s;
-}
-
-section h1#camas{
-    transition: 2s;
-}
-
-section h1#coleiras{
-    transition: 2s;
-}
-
-section h1#casas{
-    transition: 2s;
-}
-
-section h1#brinquedos{
-    transition: 2s;
-}
 /*---------------------------------------------*/
 
 .flex{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    /* max-width: 1000px; */
-    /* margin: 0 auto; */
     width: 100%;
     height: 100%;
     font-family: "Righteous", sans-serif;

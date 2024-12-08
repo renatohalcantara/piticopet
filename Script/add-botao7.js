@@ -11,6 +11,7 @@ function capturaProduto7()
     var preço7real = (preço7.textContent)
     
     gerarTabela(produto7real, preço7real)
+    alert("Você adicionou um produto ao seu carrinho !")
     num++
     contador.textContent = num
 }
