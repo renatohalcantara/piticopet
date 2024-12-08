@@ -250,15 +250,6 @@ footer .container{
     padding-top: 20px;
 }
 
-#whaths svg{
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    color: var(--cor3);
-    z-index: 9999;
-    cursor: pointer;
-}
-
 @media only screen and (max-width: 800px){
     .menu-desktop{
         display: none;
