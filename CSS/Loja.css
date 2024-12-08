@@ -150,6 +150,7 @@ section h1{
     box-shadow: 3px 3px 15px #89898985;
     transition: 0.5s all;
     background-color: white;
+    cursor: pointer;
 }
 
 .produtos:hover{
@@ -173,7 +174,8 @@ section h1{
     background-color: var(--cor2);
     font-family: "Righteous", sans-serif;
     border: none;
-    border-radius: 5px
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .flex .produtos .und{
@@ -187,7 +189,7 @@ section h1{
     background-color: white;
 }
 
-.background-Laranja{
+.background-azul{
     background-color: #b8e4ff;
 }
 
@@ -256,9 +258,13 @@ footer .container{
 }
 
 .container h3{
+    font-weight: 300;
     font-size: 25px;
     letter-spacing: 1px;
-    padding-bottom: 10px;
+}
+
+#area1 h3{
+    padding: 7px 0;
 }
 
 #area1{
@@ -270,11 +276,11 @@ footer .container{
 }
 
 #area3{
-    line-height: 30px;
+    line-height: 28px;
 }
 
 .redes-sociais{
-    padding-top: 20px;
+    padding-top: 5px;
 }
 
 /* BAOTÃO WHATSAPP */
@@ -326,5 +332,16 @@ footer .container{
     .container .redes-sociais{
         text-align: center;
         margin: 20px 0px;
+    }
+}
+
+@media only screen and (max-width: 660px){
+    #carrinho{
+        justify-content: center;
+        padding-left: 9px;
+    }
+
+    tbody td{
+        font-size: large;
     }
 }

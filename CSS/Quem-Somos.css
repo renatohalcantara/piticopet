@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 :root {
-    --cor1: #8ee5f5;
+    --cor1: #0597F2;
     --cor2: #ea4200;
     --fonte_padrao: Arial, Helvetica, sans-serif;
 }
@@ -15,7 +15,7 @@
 }
 
 body {
-    background-color: var(--cor1);
+    background-color: white;
     font-family: var(--fonte_padrao);
     text-align: justify;
 }
@@ -175,7 +175,7 @@ main p{
 }
 
 .listaDiferenciais{
-    padding: 0px 60px 0px 60px;
+    padding: 0px 60px 8px 60px;
     list-style: none;
     font-size: 22px;
 }
@@ -192,13 +192,18 @@ footer .container{
     justify-content: space-evenly;
     flex-wrap: wrap;
     color: white;
+    margin-top: 20px;
     padding: 25px 0 25px 0;
 }
 
 .container h3{
+    font-weight: 300;
     font-size: 25px;
     letter-spacing: 1px;
-    padding-bottom: 10px;
+}
+
+#area1 h3{
+    padding: 7px 0;
 }
 
 #area1{
@@ -210,11 +215,11 @@ footer .container{
 }
 
 #area3{
-    line-height: 30px;
+    line-height: 28px;
 }
 
 .redes-sociais{
-    padding-top: 20px;
+    padding-top: 5px;
 }
 
 #h2{
@@ -292,6 +297,10 @@ footer .container{
     }
 
     main p{
+        padding: 0px 20px;
+    }
+
+    .listaDiferenciais{
         padding: 0px 20px;
     }
 }
