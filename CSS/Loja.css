@@ -210,9 +210,13 @@ section h1{
 }
 
 #carrinho-2 h2{
-    padding: 20px 0px;
-    font-weight: 100;
+    padding-right: 174px;
+    font-weight: 400;
     letter-spacing: 1px;
+    display: inline;
+}
+
+#carrinho-2 svg{
 }
 
 #p-carrinho{
