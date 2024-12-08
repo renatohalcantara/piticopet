@@ -216,10 +216,6 @@ a{
     margin: 50px 0; 
 }
 
-#video iframe{
-
-}
-
 @keyframes flutuar{
     0%{
         top: 0;

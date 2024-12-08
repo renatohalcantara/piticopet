@@ -304,3 +304,34 @@ footer .container{
         padding: 0px 20px;
     }
 }
+@media only screen and (max-width: 1050px){
+    footer .container{
+        justify-content: flex-start;
+        padding: 0px 20px 0px 10px;
+    }
+
+    .container h3{
+        text-align: center;
+    }
+
+    #area1{
+        width: 100%;
+    }
+
+    #area2{
+        width: 100%;
+    }
+
+    #area3{
+        width: 100%;
+    }
+
+    #area3 h3{
+        margin: 15px 0px;
+    }
+
+    .container .redes-sociais{
+        text-align: center;
+        margin: 20px 0px;
+    }
+}

@@ -129,6 +129,30 @@ section h1{
     letter-spacing: 3px;
     padding: 20px 0px;
 }
+
+section h1#rações{
+    transition: 2s;
+}
+
+section h1#comedouros{
+    transition: 2s;
+}
+
+section h1#camas{
+    transition: 2s;
+}
+
+section h1#coleiras{
+    transition: 2s;
+}
+
+section h1#casas{
+    transition: 2s;
+}
+
+section h1#brinquedos{
+    transition: 2s;
+}
 /*---------------------------------------------*/
 
 .flex{
@@ -145,7 +169,6 @@ section h1{
 .produtos{
     width: 320px;
     height: 340px;
-    margin: 30px;
     border-radius: 8px;
     box-shadow: 3px 3px 15px #89898985;
     transition: 0.5s all;
@@ -162,6 +185,19 @@ section h1{
     text-align: center;
     padding: 5px 15px;
 }
+.produtos #produto1, #produto2, #produto3, #produto4, #produto5, #produto6, #produto7, #produto8, #produto9, #produto10, #produto11, #produto12{
+    font-family: "Righteous", sans-serif;
+    font-weight: 500;
+    color: var(--cor2);
+}
+
+#preço1, #preço2, #preço3, #preço4{
+    margin-bottom: 30px;
+}
+
+.preço{
+    margin-bottom: 60px;
+}
 
 .centralizar{
     display: flex;
@@ -174,8 +210,9 @@ section h1{
     background-color: var(--cor2);
     font-family: "Righteous", sans-serif;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
+    z-index: 8888;
 }
 
 .flex .produtos .und{
@@ -214,9 +251,6 @@ section h1{
     font-weight: 400;
     letter-spacing: 1px;
     display: inline;
-}
-
-#carrinho-2 svg{
 }
 
 #p-carrinho{
@@ -337,6 +371,14 @@ footer .container{
         text-align: center;
         margin: 20px 0px;
     }
+
+    .produtos{
+        margin: 10px;
+    }
+
+    .produtos:hover {
+        margin-bottom: 20px;
+}
 }
 
 @media only screen and (max-width: 660px){
@@ -347,5 +389,37 @@ footer .container{
 
     tbody td{
         font-size: large;
+    }
+}
+
+@media only screen and (max-width: 1050px){
+    footer .container{
+        justify-content: flex-start;
+        padding: 0px 20px 0px 10px;
+    }
+
+    .container h3{
+        text-align: center;
+    }
+
+    #area1{
+        width: 100%;
+    }
+
+    #area2{
+        width: 100%;
+    }
+
+    #area3{
+        width: 100%;
+    }
+
+    #area3 h3{
+        margin: 15px 0px;
+    }
+
+    .container .redes-sociais{
+        text-align: center;
+        margin: 20px 0px;
     }
 }
